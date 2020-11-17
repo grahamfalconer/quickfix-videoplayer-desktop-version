@@ -1,1 +1,1 @@
-# quickfix-videoplayer-new
+# quickfix-videoplayer-desktop
