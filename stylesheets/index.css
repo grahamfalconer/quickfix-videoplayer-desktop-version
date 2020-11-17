@@ -1,0 +1,15 @@
+body {
+  text-align: initial;
+  text-align: center;
+}
+
+video {
+  width: 1454px;
+  height: 1079px;
+  z-index: 1;
+  position: relative;
+}
+
+#video-wrapper {
+  max-width: 1454px;
+}
