@@ -4,7 +4,19 @@ body {
 
 video {
   width: 70vw;
+  height: 52.01vw;
 }
+
+#vid-two {
+  position: relative;
+  top: -52.4vw;
+  z-index: -1;
+}
+#vid-one:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
 
 #video-wrapper {
   display: inline;
@@ -15,7 +27,7 @@ video {
 #overall {
   position: absolute;
   top: 60vw;
-  left: 2.5%;
+  /* left: 2.5%; */
   z-index: -1;
   width: 95%;
   opacity: 1;
