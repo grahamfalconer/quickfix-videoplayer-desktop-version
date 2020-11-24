@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <!-- <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="stylesheets/index.css">
   <link rel="stylesheet" href="stylesheets/controls.css">
   <title>VideoPlayer</title>
@@ -10,14 +12,16 @@
 <body>
   <!-- <img id="overall" src="assets/images-individual/overall how should look"> -->
   <div id="video-wrapper">
-    <video src="assets/videos/W1 Interactive.mp4"></video>
+      <video id="vid-one" src="https://www.dropbox.com/s/uuv4fzlqbhq54lb/W1%20Interactive.mp4?raw=1"></video>
+      <video id="vid-two" src="https://www.dropbox.com/s/yrft6s035r0b12d/W2%20Interactive.mp4?raw=1"></video>
     <div id="control-bar-wrapper">
       <img id="bottom-bar" src="assets/images-individual/dark pink background bottom bar.png">
-      <img id="play-button" src="assets/images-individual/play button.png">
+      <img id="play-button" onclick="play()" src="assets/images-individual/play button.png">
       <img id="volume-button" src="assets/images-individual/volume button.png">
       <img id="fullscreen-button" src="assets/images-individual/fullscreen button.png">
       <img id="switch-button" src="assets/images-individual/button.png">
     </div>
   </div>
 </body>
+<script src="script/VideoPlayer.js"></script>
 </html>
