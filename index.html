@@ -15,13 +15,17 @@
       <video id="vid-one" src="https://www.dropbox.com/s/uuv4fzlqbhq54lb/W1%20Interactive.mp4?raw=1"></video>
       <video id="vid-two" src="https://www.dropbox.com/s/yrft6s035r0b12d/W2%20Interactive.mp4?raw=1"></video>
     <div id="control-bar-wrapper">
-      <img id="bottom-bar" src="assets/images-individual/dark pink background bottom bar.png">
-      <img id="play-button" onclick="play()" src="assets/images-individual/play button.png">
-      <img id="volume-button" src="assets/images-individual/volume button.png">
-      <img id="fullscreen-button" src="assets/images-individual/fullscreen button.png">
-      <img id="switch-button" src="assets/images-individual/button.png">
+      <div id="pink-bar-wrapper">
+        <img id="bottom-bar" src="assets/images-individual/dark pink background bottom bar.png">
+        <img id="play-button" onclick="videoPlayer.playVideos()" src="assets/images-individual/play button.png">
+        <img id="volume-button" onclick="videoPlayer.toggleVolumeSlider()" src="assets/images-individual/volume button.png">
+        <img id="fullscreen-button" src="assets/images-individual/fullscreen button.png">
+        <div id="progress-slider"></div>
+      </div>
+      <img id="switch-button" onmousedown="videoPlayer.switchVideos()" onmouseup="videoPlayer.switchVideos()" src="assets/images-individual/button.png">
     </div>
   </div>
+  <input id="volume-slider" type="range" min="0" max="100" value="0" step="1">
 </body>
 <script src="script/VideoPlayer.js"></script>
 </html>
