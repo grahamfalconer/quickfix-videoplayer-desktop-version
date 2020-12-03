@@ -13,12 +13,13 @@
   </style>
 </head>
 <body>
-  <iframe style="width: 70vw; height: 38vw;" id="iFrame1" src="index.html"></iframe>
+  <iframe style="width: 70vw; height: 38vw; border: none;" id="iFrame1" src="index.html"></iframe>
   
 </body>
 <script>
   var iframe = document.getElementById("iFrame1")
   let fullscreenButton;
+  var inFullscreen = false;
 
   let myInterval = setInterval(() => {
     fullscreenButton = iframe.contentWindow.document.getElementById("fullscreen-button");
@@ -26,6 +27,14 @@
       console.log("fullscreen button located")
       clearInterval(myInterval)
       fullscreenButton.addEventListener('click', () => {
+        if(!inFullscreen) {
+          iframe.requestFullscreen()
+          inFullscreen = true;
+
+        } else {
+          document.exitFullscreen()
+          inFullscreen = false;
+        }
         
       })
 
