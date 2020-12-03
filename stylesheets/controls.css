@@ -37,3 +37,34 @@
 #control-bar-wrapper {
   margin-top: -130vw;
 }
+
+#pink-bar-wrapper {
+  opacity: 0;
+}
+#pink-bar-wrapper:hover {
+  opacity: 1;
+}
+
+#volume-slider {
+  cursor: pointer;
+  position: absolute;
+  top: 38vw;
+  left: 17vw;
+  z-index: 10;
+  -webkit-appearance: slider-vertical;
+  background-color: blue;
+  opacity: 0;
+}
+
+#progress-slider {
+  position: absolute;
+  top: -2.4vw;
+  left: 8.75vw;
+  width: 55vw;
+  height: 2vw;
+  /* border: 0.05vw black solid; */
+  background-image: url(../assets/images-individual/fill-bar.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: -55vw 0vw;
+}
