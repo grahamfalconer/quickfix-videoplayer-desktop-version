@@ -12,17 +12,11 @@ video {
   top: -52.4vw;
   z-index: -1;
 }
-#vid-one:hover {
-  opacity: 0;
-  cursor: pointer;
-}
-
 
 #video-wrapper {
   display: inline;
   position: relative;
 }
-
 
 #overall {
   position: absolute;
